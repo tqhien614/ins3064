@@ -7,7 +7,7 @@ if (!isset($_SESSION['ADMIN_LOGIN']) || $_SESSION['ADMIN_LOGIN'] == ' ') {
     header('Location: login.php');
     exit;
 }
-
+ v    
 // Xử lý các action
 if (isset($_GET['type']) && $_GET['type'] != ' ') {
     $type = getSafeValue($con, $_GET['type']);
